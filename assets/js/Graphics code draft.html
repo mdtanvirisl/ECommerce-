@@ -1,0 +1,255 @@
+// Orange: glColor3ub(255, 165, 0);
+// Blue: glColor3ub(0, 0, 255);
+// Sky Blue: glColor3ub(135, 206, 250);
+// Deep Lavender: glColor3ub(148, 87, 235);
+// Gray: glColor3ub(128, 128, 128);
+// White: glColor3ub(255, 255, 255);
+// Black: glColor3ub(0, 0, 0);
+// Yellow: glColor3ub(255, 255, 0);
+<!--  ----------------------------------------------------------------------  -->
+//Score Board
+    glBegin(GL_QUADS);
+    glColor3ub(0, 0, 0); // Black
+    
+    glVertex2f(0.16, 0.84);
+    glVertex2f(0.84, 0.84);
+    glVertex2f(0.84, 0.16);
+    glVertex2f(0.16, 0.16);
+    glEnd();
+
+//Score Board
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 0); // Yellow
+    
+    glVertex2f(0.2, 0.8);
+    glVertex2f(0.8, 0.8);
+    glVertex2f(0.8, 0.2);
+    glVertex2f(0.2, 0.2);
+    glEnd();
+
+//Horizontal Line
+    glBegin(GL_LINES);
+    glColor3ub(0, 0, 0); // Black
+    
+    glVertex2f(0.2, 0.6);
+    glVertex2f(0.8, 0.6);
+    glEnd();
+
+//Vertical Line
+    glBegin(GL_LINES);
+    glColor3ub(0, 0, 0); // Black
+    
+    glVertex2f(0.5, 0.8);
+    glVertex2f(0.5, 0.6);
+    glEnd();
+
+// Colon Upper
+    glBegin(GL_QUADS);
+    glColor3ub(0, 0, 0); // Black
+
+    glVertex2f(0.49, 0.45);
+    glVertex2f(0.51, 0.45);
+    glVertex2f(0.51, 0.43);
+    glVertex2f(0.49, 0.43);
+    glEnd();
+
+// Colon Below
+    glBegin(GL_QUADS);
+    glColor3ub(0, 0, 0); // Black
+
+    glVertex2f(0.49, 0.37);
+    glVertex2f(0.51, 0.37);
+    glVertex2f(0.51, 0.35);
+    glVertex2f(0.49, 0.35);
+    glEnd();
+<!--  ----------------------------------------------------------------------  -->
+//Sky
+    glBegin(GL_QUADS);
+    glColor3ub(135, 206, 250); // Sky Blue
+    
+    glVertex2f(-1, 0);
+    glVertex2f(1, 0);
+    glVertex2f(1, 1);
+    glVertex2f(-1, 1);
+    glEnd();
+
+//Field
+    glBegin(GL_QUADS);
+    glColor3ub(0, 100, 0); // Green
+    
+    glVertex2f(-1, -1);
+    glVertex2f(1, -1);
+    glVertex2f(1, 0);
+    glVertex2f(-1, 0);
+    glEnd();
+    
+//Field White line Polygon
+    glBegin(GL_LINES);
+    glColor3ub(255, 255, 255); // White 
+    glVertex2f(-1, -0.4);
+    glVertex2f(1, -0.4);
+
+    glBegin(GL_LINES);
+    glColor3ub(255, 255, 255); // White 
+    glVertex2f(0, -0.4);
+    glVertex2f(0, -1);
+
+    <!-- glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255); // White 
+
+    glVertex2f(-1, -0.4);
+    glVertex2f(1, -0.4);
+    glVertex2f(0, 0.4);
+    glVertex2f(0, -1);
+    glVertex2f(0, 0.4);
+    glVertex2f(-1, -0.4);
+    glEnd(); -->
+<!-- --------------------------------------- -->
+
+//Fench Left
+    glBegin(GL_QUADS);
+    glColor3ub(128, 128, 128); // Gray color
+    
+    glVertex2f(-1, 0);
+    glVertex2f(-0.8, 0);
+    glVertex2f(0.73, 0.2);
+    glVertex2f(-1, 0.2);
+    glEnd();
+
+//Fench Right
+    glBegin(GL_QUADS);
+    glColor3ub(128, 128, 128); // Gray color
+    
+    glVertex2f(0.8, 0);
+    glVertex2f(1, 0);
+    glVertex2f(1, 0.2);
+    glVertex2f(0.73, 0.2);
+    glEnd();
+<!-- ------------------------------------ -->
+//Lower Portion
+    glBegin(GL_QUADS);
+    glColor3ub(115, 79, 150); // Dark Lavender 
+    
+    glVertex2f(-0.8, -0.23);
+    glVertex2f(0.8, -0.23);
+    glVertex2f(0.8, 0);
+    glVertex2f(-0.8, 0);
+    glEnd();
+
+//Roof
+    glBegin(GL_QUADS);
+    glColor3ub(115, 79, 150); // Dark Lavender 
+    
+    glVertex2f(-0.8, 0.6);
+    glVertex2f(0.8, 0.6);
+    glVertex2f(0.8, 0.7);
+    glVertex2f(-0.8, 0.7);
+    glEnd();
+
+//Roof Polygon
+    glBegin(GL_POLYGON);
+    glColor3ub(191, 148, 228); // Light Lavender
+
+    glVertex2f(-0.8, 0.7);
+    glVertex2f(-0.6, 0.8);
+    glVertex2f(-0.4, 0.7);
+    glVertex2f(-0.2, 0.8);
+    glVertex2f(0, 0.7);
+    glVertex2f(0.2, 0.8);
+    glVertex2f(0.4, 0.7);
+    glVertex2f(0.6, 0.8);
+    glVertex2f(0.8, 0.7);
+    glVertex2f(-0.8, 0.7);
+    glEnd();
+
+//Gallery Lower Portion
+    glBegin(GL_QUADS);
+    glColor3ub(255, 165, 0); // Orange color
+    
+    glVertex2f(-0.8, 0);
+    glVertex2f(0.8, 0);
+    glVertex2f(0.73, 0.2);
+    glVertex2f(-0.73, 0.2);
+    glEnd();
+
+//Gallery Middle Portion
+    glBegin(GL_QUADS);
+    glColor3ub(0, 0, 255); // Blue color
+
+    glVertex2f(-0.73, 0.2);
+    glVertex2f(0.73, 0.2);
+    glVertex2f(0.67, 0.4);
+    glVertex2f(-0.67, 0.4);
+    glEnd();
+
+//Gallery Upper Portion
+    glBegin(GL_QUADS);
+    glColor3ub(255, 165, 0); // Orange color
+    
+    glVertex2f(-0.67, 0.4);
+    glVertex2f(0.67, 0.4);
+    glVertex2f(0.6, 0.6);
+    glVertex2f(-0.6, 0.6);
+    glEnd();
+<!-- ------------------------------ -->
+
+//Gallery Door 
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 0); // Yellow
+    
+    glVertex2f(-0.1, 0.16);
+    glVertex2f(0.1, 0.16);
+    glVertex2f(0.1, 0);
+    glVertex2f(-0.1, 0);
+    glEnd();
+
+//Gallery Door Upper Portion
+    glBegin(GL_QUADS);
+    glColor3ub(135, 206, 250); // Sky Blue
+    
+    glVertex2f(-0.1, 0.4);
+    glVertex2f(0.1, 0.4);
+    glVertex2f(0.1, 0.2);
+    glVertex2f(-0.1, 0.2);
+    glEnd();
+<!-- --------------Done------------------ -->
+
+//Piller Left 1
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255); // White 
+    
+    glVertex2f(-0.72, 0.6);
+    glVertex2f(-0.68, 0.6);
+    glVertex2f(-0.68, 0);
+    glVertex2f(-0.72, 0);
+    glEnd();
+
+//Piller Left 2
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255); // White 
+    
+    glVertex2f(-0.32, 0.6);
+    glVertex2f(-0.28, 0.6);
+    glVertex2f(-0.28, 0);
+    glVertex2f(-0.32, 0);
+    glEnd();
+
+//Piller Right 1
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255); // White 
+    
+    glVertex2f(0.28, 0.6);
+    glVertex2f(0.32, 0.6);
+    glVertex2f(0.32, 0);
+    glVertex2f(0.28, 0);
+    glEnd();
+
+//Piller Right 2
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255); // White 
+    
+    glVertex2f(0.68, 0.6);
+    glVertex2f(0.72, 0.6);
+    glVertex2f(0.72, 0);
+    glVertex2f(0.68, 0);
+    glEnd();

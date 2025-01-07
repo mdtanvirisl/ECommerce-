@@ -1,0 +1,125 @@
+header {
+    background-color: #1e81b0;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    /* position: fixed; */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav h2{
+    margin-right: 8px;
+}
+
+nav img {
+    height: 50px;
+    width: 50px;
+    padding: 8px 5px;
+    margin-right: 5px;
+}
+
+#cart_img {
+    height: 30px;
+    width: 30px;
+    padding: 20px 5px 5px 5px;
+    margin-right: 0px;
+}
+
+#cart_img:hover {
+    background-color: #fff;
+    padding: 5px ;
+    margin: 10px 0px 0px 0px;
+    border-radius: 15px;
+}
+
+nav div{
+    margin-top: 25px;
+}
+
+.nav_links a{
+    background-color: #41b5dfce;
+    color: #fff;
+    text-decoration: none;
+
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.nav_links a:hover{
+    background-color: #fc8754;
+    color: black;
+    text-decoration: none;
+}
+
+/* logout button */
+#logout{
+    background-color: #ffd9c0;
+    padding: 8px 12px 8px 12px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#logout:hover{
+    background-color: lightsalmon;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* --------------------HEADER END-------------------- */
+
+/* Style for the footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 0px 20px 0px 20px;
+    text-align: left;
+    color: #333;
+}
+
+.footer{
+    display: flex;
+    justify-content: left;
+}
+
+/* Style for the contact details */
+.cd{
+    padding-top: 0px;
+}
+.footer h4 {
+    color: #555;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Style for the social profiles icons */
+.sp{
+    padding-left: 500px ;
+    text-align: right;
+}
+
+.footer img {
+    width: 35px;
+    height: 35px;
+    padding: 0px 10px 0px 10px;
+}
+
+.footer img:hover {
+    width: 32px;
+    height: 32px;
+}
+
+/* Center align the copyright text */
+.footer p{
+    text-align: center;
+    margin-bottom: 5px;
+    color: #777;
+}
+
+/* --------------------FOOTER END-------------------- */
